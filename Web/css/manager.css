@@ -1,0 +1,1036 @@
+/* CSS Document code by 11447@sohu.com */
+/* BODY
+{
+	font-weight: normal;
+	font-size: 12px;
+	right: 0px;
+	left: 0px;
+	margin: 0px;
+	word-break: break-all; ;BOTTOM:0px;FONT-STYLE:normal;FONT-FAMILY:"宋体";TOP:0px
+}
+*/
+BODY
+{
+	bottom: 0;
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	left: 0;
+	margin: 0;
+	right: 0;
+	top: 0;
+}
+input, textarea, select
+{
+	font-size: 12px;
+	font-family: "宋体" ,Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+
+DIV
+{
+}
+table
+{
+	border-collapse: collapse;
+}
+img
+{
+	border: 0px;
+}
+
+
+/****yf-10.24 *****/
+th, .table_basic th
+{
+	/*color: #fff;
+	background: #7DB3D9 url(/images/hangbg.gif) repeat-x;*/
+	text-align: center;
+	height: 23px;
+	line-height: 23px;
+	white-space: nowrap;
+}
+input, select
+{
+	font-size: 12px;
+}
+/****yf-10.24 -end*****/
+
+
+
+
+
+.select1
+{
+	scrollbar-face-color: #000000;
+	scrollbar-highlight-color: #ffffff;
+	width: 120px;
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-3dlight-color: #ffffff;
+	scrollbar-arrow-color: #ffffff;
+	scrollbar-track-color: #ffffff;
+	scrollbar-darkshadow-color: #ffffff;
+	scrollbar-base-color: #ffffff;
+}
+
+.black
+{
+	color: #000000;
+	line-height: 18px;
+	text-decoration: none;
+}
+A.black:hover
+{
+	color: #ff0000;
+}
+.white
+{
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration: none;
+}
+A.white:hover
+{
+	color: red;
+	text-decoration: underline;
+}
+A:visited
+{
+	color: blue;
+	text-decoration: none;
+}
+A:active
+{
+	color: blue;
+	text-decoration: none;
+}
+A:link
+{
+	color: blue;
+	text-decoration: none;
+}
+A:hover
+{
+	color: #ff6600;
+	text-deroration: none;
+}
+.in-bg
+{
+	background-image: url(/images/in.gif);
+}
+.other
+{
+	background-image: url(/images/other.gif);
+}
+.fonttitle
+{
+	font-size: 12px;
+	filter: DropShadow(Color=#000000, OffX=1, OffY=1, Positive=2);
+	color: #ffffff;
+	font-family: "宋体";
+	height: 13px;
+	text-align: center;
+	text-decoration: none;
+	text-valign: middle;
+}
+.imgcss
+{
+	font-size: 45px;
+	filter: DropShadow(Color=#E1E4EC, OffX=2, OffY=2, Positive=2);
+	color: #33cccc;
+	font-family: @黑体;
+	height: 13px;
+	text-align: center;
+	text-decoration: none;
+	text-valign: middle;
+}
+.linkcss
+{
+	border-right: #c3cdd5 1px solid;
+	padding-right: 1px;
+	border-top: #c3cdd5 1px solid;
+	padding-left: 1px;
+	padding-bottom: 1px;
+	border-left: #c3cdd5 1px solid;
+	padding-top: 1px;
+	border-bottom: #c3cdd5 1px solid;
+	background-color: #efefef;
+}
+.linkcsstitle
+{
+	border-right: #c3cdd5 0px solid;
+	padding-right: 0px;
+	border-top: #c3cdd5 0px solid;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	border-left: #c3cdd5 0px solid;
+	cursor: pointer;
+	padding-top: 0px;
+	border-bottom: #c3cdd5 0px solid;
+	background-color: #4791c5;
+	clear: both;
+}
+.linkcsstitle td
+{
+	background: url(/images/tiao.jpg);
+	height: 26px;
+}
+.linkcssnull
+{
+	border-right: #c3cdd5 0px solid;
+	padding-right: 1px;
+	border-top: #c3cdd5 0px solid;
+	padding-left: 1px;
+	padding-bottom: 1px;
+	border-left: #c3cdd5 0px solid;
+	padding-top: 1px;
+	border-bottom: #c3cdd5 0px solid;
+	background-color: #f3f8fa;
+}
+.menucss
+{
+	padding-right: 1px;
+	padding-left: 1px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	background-color: #dce5f6;
+}
+.inputdate
+{
+	border-right: 1pt solid;
+	border-top: 1pt solid;
+	border-left: 1pt solid;
+	cursor: hand;
+	border-bottom: 1pt solid;
+}
+.inputline
+{
+	border-right: red 0px solid;
+	border-top: red 0px solid;
+	border-left: red 0px solid;
+	border-bottom: red 1px solid;
+	background-color: #f2f4f7;
+}
+.copyright
+{
+	font-size: 11px;
+	font-family: "Arial" , "Helvetica" , "sans-serif";
+	text-decoration: none;
+}
+
+.leftmenu
+{
+	clear: both;
+}
+.leftmenu img
+{
+	margin-bottom: -3px;
+}
+.leftmenu span
+{
+	clear: both;
+}
+a.menuon
+{
+	color: #c00;
+}
+a.menuon, a.menuon:visited, a.menuon:hover
+{
+	color: #f60;
+}
+
+
+a.button
+{
+	background: url(/images/a.gif) no-repeat right;
+	color: #333333;
+	display: block;
+	float: left;
+	height: 24px;
+	padding-right: 7px;
+	font: normal 12px sans-serif#000000;
+	margin-right: 7px;
+	text-decoration: none;
+}
+a.button span
+{
+	background: transparent url(/images/span.gif) no-repeat left;
+	color: #333;
+	display: block;
+	padding: 5px 1px 5px 11px;
+	line-height: 14px;
+}
+a.button:hover
+{
+	background-position: right -24px;
+}
+a.button:hover span
+{
+	background-position: left -24px;
+}
+a.button:active
+{
+	background-position: right -48px;
+	outline: none;
+}
+a.button:active span
+{
+	background-position: left -48px;
+	padding: 6px 0 4px 12px;
+}
+a.button_xz
+{
+	background: transparent url(/images/a_xz.gif) no-repeat scroll right top;
+	color: #c00;
+	display: block;
+	float: left;
+	height: 24px;
+	padding-right: 7px;
+	font: normal 12px sans-serif#000000;
+	margin-right: 7px;
+	text-decoration: none;
+}
+a.button_xz span
+{
+	background: transparent url(/images/span_xz.gif) no-repeat;
+	color: #c00;
+	display: block;
+	padding: 5px 1px 5px 11px;
+	line-height: 14px;
+}
+a.button_xz:hover
+{
+	background-position: right -24px;
+}
+a.button_xz:hover span
+{
+	background-position: left -24px;
+}
+a.button_xz:active
+{
+	background-position: right -48px;
+	color: #c00;
+	outline: none;
+}
+a.button_xz:active span
+{
+	background-position: left -48px;
+	color: #c00;
+	padding: 6px 0 4px 12px;
+}
+.lr_bg
+{
+	background-color: #8AAAD9;
+}
+.lr_shangbg
+{
+	background-color: #D7E9FF;
+	font-size: 12px;
+	line-height: normal;
+	color: #000000;
+}
+.lr_hangbg
+{
+	background-color: #EBF4FF;
+	font-size: 12px;
+	line-height: normal;
+	color: #000000;
+}
+.unnamed1
+{
+	color: #f00;
+}
+
+
+.ctt
+{
+	height: auto;
+	padding: 6px;
+	clear: both;
+	border: 1px solid #CCCCCC;
+}
+.w936
+{
+	width: 855px;
+	clear: both;
+	margin-right: 0;
+	margin-bottom: 5px;
+	margin-left: 0;
+}
+.dis
+{
+	display: block;
+}
+.undis
+{
+	display: none;
+}
+.tabs
+{
+	width: 100%;
+	background: #EEF2F3;
+	line-height: normal;
+}
+.tabs li.tbtitle
+{
+	display: block;
+	float: left;
+	padding-top: 5px;
+	height: 18px;
+	width: 90px;
+}
+.tabs .tbtitle a
+{
+	margin: 0px;
+	padding: 0px;
+	background: none;
+}
+.tabs ul
+{
+	margin: 0;
+	padding: 10px 10px 0 50px;
+	list-style: none;
+}
+.tabs li
+{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+.tabs a
+{
+	float: left;
+	background: url(/images/200801081258490.gif) no-repeat left top;
+	margin: 0;
+	padding: 0 0 0 4px;
+	text-decoration: none;
+}
+.tabs a span
+{
+	float: left;
+	display: block;
+	background: url(/images/200801081259040.gif) no-repeat right top;
+	padding: 5px 15px 4px 6px;
+	color: #114E87;
+}
+.tabs a span
+{
+	float: none;
+}
+.tabs a:hover span
+{
+	color: #FF9834;
+}
+.tabs a:hover
+{
+	background-position: 0% -42px;
+}
+.tabs a:hover span
+{
+	background-position: 100% -42px;
+}
+
+
+
+.tabs a.eare_on
+{
+	float: left;
+	background: url(/images/200801081259040.gif) no-repeat left top;
+	margin: 0;
+	padding: 0 0 0 4px;
+	text-decoration: none;
+}
+.tabs a.eare_on
+{
+	background-position: 0% -42px;
+}
+.tabs a.eare_on span
+{
+	float: left;
+	display: block;
+	background: url(/images/200801081258490.gif) no-repeat right top;
+	padding: 5px 15px 4px 6px;
+	color: #114E87;
+	font-weight: bold;
+}
+.tabs a.eare_on span
+{
+	background-position: 100% -42px;
+}
+.tabs a.eare_on span
+{
+	float: none;
+}
+.tabs a.eare_on:hover span
+{
+	color: #FF9834;
+}
+.tabs a.eare_on:hover
+{
+}
+.tabs a.eare_on:hover span
+{
+}
+.blue_bb
+{
+	font-size: 26px;
+	line-height: normal;
+	color: #001BA2;
+}
+.hui
+{
+	color: #CCCCCC;
+}
+.baidi
+{
+	background-color: #FFFFFF;
+	font-size: 12px;
+	color: #000000;
+}
+
+.eali ul
+{
+	margin: auto 0;
+	padding: 0;
+}
+.eali li
+{
+	display: inline;
+	float: left;
+	padding: 2px 5px;
+}
+.eali li a.lion
+{
+	background: #ff6600;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 2px 5px;
+}
+.eali li a.lion:hover
+{
+	background: #ff6600;
+	font-size: 14px;
+	padding: 2px 5px;
+}
+.eali a
+{
+	font-size: 14px;
+	padding: 2px 5px;
+}
+.eali a:hover
+{
+	background: #F1B790;
+	font-size: 14px;
+	padding: 2px 5px;
+}
+.eali a:visited
+{
+	font-size: 14px;
+}
+.lv
+{
+	color: #009900;
+}
+a.lv, a.lv:visited
+{
+	color: #009900;
+}
+a.lv:hover
+{
+	color: #f00;
+}
+
+a.pu, a.pu:visited
+{
+	color: #333;
+}
+a.pu:hover
+{
+	color: #f00;
+}
+.errmsg
+{
+	color: Red;
+}
+
+
+/*2010-7-22 xuty*/
+
+.black_overlay
+{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity=0);
+}
+.white_content
+{
+	display: none;
+	position: absolute;
+	top: 10%;
+	left: 48%;
+	width: 300px;
+	height: 150px;
+	padding: 2px;
+	border: 4px solid orange;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+}
+
+/*2010-9-19 dyz */
+
+.DataListUpGray
+{
+	padding: 4px 15px 0px 5px;
+	border: solid 1px #cdcbcc;
+	background: url(/images/btn04.jpg) no-repeat right;
+	cursor: pointer;
+	text-decoration: none;
+	color: #323232;
+	font-size: 12px;
+	font-weight: bold;
+}
+.DataListUpGreen
+{
+	padding: 4px 15px 0px 5px;
+	border: solid 1px #2e8cc9;
+	background: url(/images/btn02.jpg) no-repeat right;
+	cursor: pointer;
+	text-decoration: none;
+	color: #323232;
+	font-size: 12px;
+	font-weight: bold;
+}
+.DataListDownGray
+{
+	padding: 4px 15px 0px 5px;
+	border: solid 1px #cdcbcc;
+	background: url(/images/btn03.jpg) no-repeat right;
+	cursor: pointer;
+	text-decoration: none;
+	color: #404040;
+	font-size: 12px;
+	font-weight: bold;
+}
+.DataListDownGreen
+{
+	padding: 4px 15px 0px 5px;
+	border: solid 1px #2e8cc9;
+	background: url(/images/btn01.jpg) no-repeat right;
+	cursor: pointer;
+	text-decoration: none;
+	color: #404040;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+DIV.digg
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	margin: 3px;
+	margin-top: 10px;
+	padding-top: 3px;
+	text-align: center;
+}
+DIV.digg A
+{
+	border: #0099FF 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	margin: 2px;
+	color: #0099FF;
+	padding-top: 2px;
+	text-decoration: none;
+}
+DIV.digg A:hover
+{
+	border: #0099FF 1px solid;
+	background: #0099FF;
+	color: #fff;
+}
+DIV.digg A:active
+{
+	border: #0099FF 1px solid;
+	color: #000;
+}
+DIV.digg SPAN.current
+{
+	border: #0099FF 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: bold;
+	padding-bottom: 2px;
+	margin: 2px;
+	color: #fff;
+	padding-top: 2px;
+	background-color: #0099FF;
+}
+DIV.digg SPAN.disabled
+{
+	border: #eee 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	margin: 2px;
+	color: #ddd;
+	padding-top: 2px;
+}
+/*end*/
+
+
+
+
+
+
+
+
+/* CSS Document code by 11447@sohu.com */
+/*****yf-10.24景区图片边框样式*****/
+.jq_pic
+{
+	width: 120px;
+	height: 120px;
+	padding: 3px;
+	border: #999 solid 1px;
+	margin: 5px;
+}
+.table_basic td
+{
+	padding-left: 5px;
+	line-height: 23px; /*height: 23px;*/
+}
+.fontblue
+{
+	color: #009;
+}
+.search_bg
+{
+	background: url(/images/search_bg.gif) repeat-x;
+	height: 30px;
+	padding-left: 15px;
+}
+.caozuo_bg
+{
+	background: url(/images/gongneng_bg.gif) repeat-x;
+	height: 25px; /*padding-left: 15px;*/
+}
+.zhtai_bg
+{
+	background: url(/images/lmnavm.gif) repeat-x;
+	height: 32px;
+	padding-left: 15px;
+}
+a.add_btn
+{
+	background: url(/images/tianjiabaocun.gif) no-repeat center center;
+	width: 53px;
+	height: 17px;
+	padding-top: 4px;
+	display: inline-block;
+	text-align: center;
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+/*****yf-10.25线路状态图片样式*****/
+.guestmenu
+{
+	display: inline-block;
+	text-align: left;
+	background: url(/images/guestmenu.gif) no-repeat 0 0;
+	width: 65px;
+	height: 18px;
+	padding-top: 5px;
+	padding-left: 4px;
+}
+.guestmenu02
+{
+	text-indent: 10px;
+}
+.shangjia, .xiajia, .state1, .state2, .state3, .state4, .state5, .state6, .state7
+{
+	padding: 2px 4px 2px 13px;
+	display: inline-block;
+	line-height: 14px;
+}
+a.state1:hover, a.state2:hover, a.state3:hover, a.state4:hover, a.state5:hover
+{
+	text-decoration: none;
+}
+.state1
+{
+	border: 1px solid #f00;
+	background: url(/images/state1.gif) no-repeat 5px 2px;
+	color: #f00;
+}
+.state2
+{
+	border: 1px solid #E48B00;
+	background: url(/images/state2.gif) no-repeat 5px 2px;
+	color: #E48B00;
+}
+.state3
+{
+	border: 1px solid #0296DB;
+	background: url(/images/state3.gif) no-repeat 5px 2px;
+	color: #0296DB;
+}
+.state4
+{
+	border: 1px solid #A4188A;
+	background: url(/images/state4.gif) no-repeat 5px 2px;
+	color: #A4188A;
+}
+.state5
+{
+	border: 1px solid #1A9C5A;
+	background: url(/images/state5.gif) no-repeat 5px 2px;
+	color: #1A9C5A;
+}
+.state6
+{
+	border: 1px solid #9AAA0E;
+	background: url(/images/state6.gif) no-repeat 5px 2px;
+	color: #9AAA0E;
+}
+.state7
+{
+	border: 1px solid #F507c1;
+	background: url(/images/state7.gif) no-repeat 5px 2px;
+	color: #F507c1;
+}
+.nostate
+{
+	display: inline-block;
+	width: 65px;
+	height: 13px;
+	text-align: center;
+	line-height: 13px;
+	padding: 3px 2px 0px 0;
+	margin-left: 5px;
+	margin-top: 1px;
+	background: url(/images/nostate.gif) no-repeat left center;
+	padding-left: 10px;
+}
+a.shangjia, a.shangjia:hover
+{
+	padding: 2px 5px;
+	text-align: center;
+	text-decoration: none;
+	background: #ff9070;
+	border: 1px #e24912 solid;
+	color: #fff;
+}
+a.xiajia, a.xiajia:hover
+{
+	padding: 2px 5px;
+	text-align: center;
+	text-decoration: none;
+	background: #a3d869;
+	border: 1px #55a51c solid;
+	color: #fff;
+}
+.keman, a.keman, a.tings, .zhengc, a.zhengc, .chengtuan, a.chengtuan, a.shangjia, a.xiajia
+{
+	display: inline-block;
+	text-align: center;
+	padding: 0 3px;
+	line-height: 18px;
+	text-decoration: none;
+	color: #666;
+}
+
+
+.kemanbj td
+{
+	background-color: #FFEED2;
+}
+a.keman
+{
+	border: 1px solid #c00;
+	background: #FFD188;
+	color: #6F380D;
+	text-decoration: none;
+}
+a.keman:hover
+{
+	border: 1px solid #c00;
+	background: #FFD188;
+}
+
+.tingsbj td
+{
+	background-color: #dadada;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
+a.tings
+{
+	border: 1px solid #9D9EA0;
+	color: #5D5D5D;
+	background: #DADADA;
+}
+a.tings:hover
+{
+	border: 1px solid #9D9EA0;
+	background: #DADADA;
+}
+
+a.zhengc
+{
+	border: 1px solid #79a119;
+	background: #dcf69f;
+	color: #026809;
+}
+a.zhengc:hover
+{
+	border: 1px solid #79a119;
+	background: #dcf69f;
+}
+
+
+a.chengtuan
+{
+	display: inline-block;
+	text-align: center;
+	padding: 0 3px;
+	line-height: 18px;
+	border: 1px solid #0296DB;
+	background: #BAE8FE;
+	color: #333;
+	text-decoration: none;
+}
+a.chengtuan:hover
+{
+	border: 1px solid #0296DB;
+	background: #BAE8FE;
+}
+
+.tb_, .tb1_
+{
+	background: #fff;
+	height: 25px;
+}
+.tb_ ul, .tb1_ ul
+{
+	height: 25px;
+	margin: 0px;
+	padding: 0px;
+}
+.tb_ li, .tb1_ li
+{
+	float: left;
+	height: 25px;
+	line-height: 1.9;
+	width: 70px;
+	padding-top: 4px;
+	cursor: pointer;
+}
+/* 用于控制显示与隐藏的css类 */
+.normaltab, .normaltab1
+{
+	background-image: url(/images/qiehuan.gif);
+	width: 70px;
+	text-align: center;
+	height: 25px;
+	background-repeat: no-repeat;
+}
+
+.hovertab, .hovertab1
+{
+	background-image: url(/images/qiehuan2.gif);
+	width: 70px;
+	text-align: center;
+	height: 25px;
+	background-repeat: no-repeat;
+}
+
+.dis, .dis1
+{
+	display: block;
+}
+.undis, .undis1
+{
+	display: none;
+}
+
+/*****yf-10.27线路状态图片样式*****/
+/* 导入名单按钮样式 */
+.daorumd a
+{
+	background: url(/images/anniured-cy.gif) no-repeat 0 0;
+	display: inline-block;
+	margin-left: 10px;
+	width: 79px;
+	height: 23px;
+	color: #D95700;
+	font-weight: bold;
+	text-align: center;
+	line-height: 23px;
+	_padding-top: 6px;
+	_height: 17px;
+}
+.daorumd a:hover
+{
+	background: url(/images/anniured-cy.gif) no-repeat 0 -23px;
+	text-decoration: none;
+	color: #F0680D;
+}
+
+a.font_f00
+{
+	color: #f00;
+	text-decoration: underline;
+}
+.hr_5
+{
+	font-size: 0;
+	line-height: 0;
+	clear: both;
+	height: 5px;
+}
+.hr_10
+{
+	font-size: 0;
+	line-height: 0;
+	clear: both;
+	height: 10px;
+}
+
+/*****yf-10.28线路状态图片样式*****/
+.no_cuti
+{
+	font-weight: normal;
+}
+
+/*****yf-10.31酒店管理页*****/
+.hotel_pic
+{
+	width: 120px;
+	height: 120px;
+	padding: 3px;
+	border: #999 solid 1px;
+	margin: 3px;
+}
+.bggray
+{
+	background: #efefef;
+}
+.bgred
+{
+	background: #f30;
+	color: #fff;
+}

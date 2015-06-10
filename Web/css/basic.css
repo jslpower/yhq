@@ -1,0 +1,99 @@
+*{ margin:0; padding:0;}
+body, button, input, select, textarea {font: 400 14px/1.5 "Microsoft YaHei",hei,Arial,"Lucida Grande",Verdana;}
+body{width:100%;overflow-x:hidden; position:relative; background:#f4f4f4;}
+ol, ul, li {list-style: none;}
+h1,h2,h3,h4,h5,h6{ font-weight:400;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, iframe,div{display: block;}
+table {border-collapse: collapse;}
+img{ border:0 none; height:auto;}
+em, b, i,s{font-style: normal;font-weight: 400;}
+a{ text-decoration:none; cursor:pointer;outline:0; color:#252525;}
+.clear{clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0;}
+.clearfix:before,.clearfix:after{content:'.'; display:block; overflow:hidden; visibility:hidden; font-size:0; line-height:0; width:0; height:0;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+
+a{blr:expression(this.onFocus=this.blur())}/*去掉a标签的虚线框*/
+:focus{outline:0;}
+
+.select{outline:none; height:36px;border:1px solid #e1e1e1;position:relative;}
+select{height:36px;-webkit-appearance:none;appearance:none;border:none;font-size:14px;padding:0px 10 0 5px;display:block;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;background-color:#fff;color:#333333;}
+
+textarea{ box-sizing:border-box;}
+input{ border-radius:0; box-sizing:border-box;font-size:16px;outline:0;}
+
+.formsize100{width:100px; }
+
+.floatL{ float:left;}
+.floatR{ float:right;}
+
+.font12{ font-size:12px;}
+.font16{ font-size:16px;}
+.font18{ font-size:18px;}
+.font22{ font-size:22px;}
+
+.mt10{ margin-top:10px;}
+.mt20{ margin-top:20px;}
+.paddB{ padding-bottom:10px;}
+.paddT{ padding-top:10px;}
+.paddL{ padding-left:10px;}
+.padd{ padding-left: 20px; padding-right:20px;}
+.cent{ text-align:center;}
+.right_txt{ text-align:right;}
+.left_txt{ text-align:left;}
+
+.font_yellow{ color:#f77408;}
+.font_gray{ color:#4f4f4f;}
+.font_green{ color:#46c357;}
+.font_blue{ color:#0481ea;}
+.font_red{ color:#f20000;}
+
+.font_hui{ color:#bdbdbd;}
+
+h1{ font-size:20px;}
+h2{ font-size:18px;}
+h3{ font-size:16px;}
+
+.bot_line{ border-bottom:#dbdbdb solid 1px;}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {cursor: pointer; border:none 0;}
+input[type="button"],input[type="submit"]{-webkit-appearance:none;}
+button:active:hover,input[type="reset"]:active:hover,input[type="button"]:active:hover,input[type="submit"]:active:hover{padding:0;}
+
+
+header{ height:44px; position:fixed; top:0; left:0;width:100%; z-index:999; background:#ffa03c;}
+
+header h1{ width:100%;line-height:44px; color:#fff;position:absolute; text-align:center; font-size:20px;}
+
+
+.warp{width:100%; height:auto; overflow:hidden;}
+
+.radius{-webkit-border-radius:50%; -moz-border-radius:50%;-ms-border-radius:50%;border-radius:50%;}
+
+.guwen_list{ padding:0 10px 10px 10px; overflow:hidden;}
+.guwen_list li{margin-top:10px; border:#e1e1e1 solid 1px; background:#fff;color:#4f4f4f;}
+
+.guwen_head{ height:42px; padding:10px 10px 10px 56px; position:relative;}
+.guwen_touxian{width:42px; height:42px; overflow:hidden; position:absolute; left:7px; top:10px;}
+.guwen_touxian img{ width:42px; height:42px;}
+
+.guwen_name{ height:21px; padding-bottom:3px;}
+.guwen_txt{ padding:10px; border-top:#e1e1e1 solid 1px;overflow:hidden; position:relative;}
+.btn{width:70px; height:22px; line-height:22px; text-align:center; display:inline-block; color:#fff; background:#fe6d14; position:absolute; right:10px; top:3px;}
+
+.basic_t{ background:#0481ea; height:48px; line-height:48px; font-size:18px; text-indent:15px; color:#fff; width:100%;}
+
+.bot{width:100%; height:48px;}
+.bot_box{width:100%;height:48px;position:fixed; bottom:0; left:0; z-index:9999;}
+.y_btn{width:100%; height:48px; line-height:48px; background:#fe6d14; display:inline-block; text-align:center; font-size:18px; color:#fff;}
+
+.u-input{ border:0 none;width:99%; height:48px; position:relative; z-index:1; text-align:right;}
+
+
+.guwen_search{width:100%;height:96px;position:fixed; top:0; left:0; z-index:9999; padding-left:10px;  -webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box; background:#f4f4f4;}
+.guwen_search li{ height:38px; float:left; padding-right:10px;margin-top:10px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+.guwen_sbtn{ height:38px; line-height:38px; text-align:center; color:#fff; background:#fe6d14; font-size:14px; width:100%;}
+
+@media screen and (max-width:360px){
+.guwen_search li select{ font-size:12px;}
+	}

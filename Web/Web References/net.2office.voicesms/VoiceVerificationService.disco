@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://voicesms.2office.net:8080/WebService/VoiceVerificationService.asmx?wsdl" docRef="http://voicesms.2office.net:8080/WebService/VoiceVerificationService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://voicesms.2office.net:8080/WebService/VoiceVerificationService.asmx" xmlns:q1="http://tempuri.org/" binding="q1:VoiceVerificationServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://voicesms.2office.net:8080/WebService/VoiceVerificationService.asmx" xmlns:q2="http://tempuri.org/" binding="q2:VoiceVerificationServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

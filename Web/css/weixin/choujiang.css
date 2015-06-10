@@ -1,0 +1,17 @@
+body{ background:#fec184 url(/images/chj-bodybg.gif) no-repeat top center; }
+
+.choujiang_box{width:100%; overflow:hidden;}
+
+.choujin_w{ background:url(/images/chj-w.png) no-repeat center;height:110px; padding-top:127px;color:#ffea00; text-align:center; font-size:13px; line-height:26px;}
+.choujin_y{ background:url(/images/chj-y.png) no-repeat center; height:117px; padding-top:120px; font-size:22px; color:#ffea00; text-align:center;}
+
+.chj_gz{width:210px; height:40px; line-height:20px; overflow:hidden; margin:10px auto; background:url(/images/chj-gz.png) no-repeat; padding:37px 10px 15px 10px; color:#fff; font-size:12px; font-family:"宋体"}
+
+
+
+.chj_touxian{width:95px; height:95px;border:#fed5ac solid 5px; overflow:hidden; margin:0 auto;}
+.chj_touxian img{ width:95px; height:95px;}
+
+
+.choujiang_bg{width:100%; height:100%;position:relative; margin-top:-40px; z-index:-1;}
+.choujiang_bg img{width:100%; height:auto; vertical-align:bottom;}

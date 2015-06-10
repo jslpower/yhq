@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HuiYuan.master.cs" Inherits="Eyousoft_yhq.Web.masterPage.HuiYuan" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="/css/style.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
+        html
+        {
+            -ms-touch-action: none;
+        }
+        body, ul, li
+        {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        body
+        {
+            overflow: hidden; /* this is important to prevent the whole page to bounce */
+        }
+        #scroller
+        {
+            z-index: 1;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            width: 100%;
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -o-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+        #header
+        {
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            background: #65AB40;
+        }
+        #footer
+        {
+            position: fixed;
+            z-index: 2;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background: #444;
+            padding: 0;
+            border-top: 1px solid #444;
+        }
+        #wrapper
+        {
+            position: fixed;
+            z-index: 2;
+            top: 65px;
+            bottom: 75px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+    </style>
+
+    <script type="text/javascript" src="/js/iscroll.js"></script>
+
+    <script type="text/javascript" src="/js/jq.mobi.min.js"></script>
+
+    <script type="text/javascript">
+
+var myScroll;
+
+function loaded () {
+
+	
+	myScroll = new iScroll('wrapper', { mouseWheel: true, click: true,
+	 });
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="warp">
+        <form id="form1" runat="server">
+        <div class="Btitle" id="header">
+            会员中心</div>
+        <div class="usermenu">
+            <ul>
+                <asp:PlaceHolder ID="PlaceHolder3" runat="server" Visible="false">
+                    <li <%=M5 %>><a href="/AppPage/orderlist.aspx">订单中心</a></li></asp:PlaceHolder>
+                <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+                    <li <%=M1 %>><a class="line" href="/AppPage/register.aspx">会员注册</a></li></asp:PlaceHolder>
+                <asp:PlaceHolder ID="PlaceHolder2" runat="server">
+                    <li <%=M2 %>><a class="line" href="/AppPage/App_login.aspx">会员登录</a></li></asp:PlaceHolder>
+                <li <%=M3 %>><a class="line" href="/AppPage/updateuser.aspx">会员修改</a></li>
+                <li <%=M4 %>><a class="line" href="/AppPage/about.aspx">关于我们</a></li>
+            </ul>
+            <div class="clear">
+            </div>
+        </div>
+        <div id="wrapper">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer" class="footer">
+            <ul>
+                <li>&nbsp;&nbsp;<a href="/AppPage/Default.aspx"><img src="/images/shouye.png"></a></li>
+                <li>&nbsp;&nbsp;<a href="/AppPage/updateuser.aspx"><img src="/images/huiyuan.png"></a></li>
+            </ul>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

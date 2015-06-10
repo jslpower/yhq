@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Test">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginForOne">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginForOneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginForOneResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginByCardNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CardNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginByCardNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginByCardNoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passport" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="usertype" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginExResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLoginResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="passportID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLoginResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLoginResultResult" type="tns:Operator" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Operator">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="UID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClientIP" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserType" type="tns:SystemUserTypes" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoginSource" type="tns:OperatorLoginSource" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserLevel" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepartmentID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepartmentNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OfficeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OfficeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PsrID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CusUserID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CusUserCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CusUserName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PolicyDepID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CallCenterWorkID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NoValidDt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JobOwnded" type="tns:OperatorJobOwned" />
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RoleId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeptPath" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IMGroup" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IMSubGroup" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EtermUser" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EtermPwd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SAASCusNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurDistributorRule" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerReturnGainRule" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerReturnGain2Type" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurSupplierRule" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsSAgent" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="TicketCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsHideGain" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="SystemUserTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="Platform" />
+          <s:enumeration value="Distributor" />
+          <s:enumeration value="Agent" />
+          <s:enumeration value="Supplier" />
+          <s:enumeration value="Member" />
+          <s:enumeration value="SuperPlatform" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="OperatorLoginSource">
+        <s:restriction base="s:string">
+          <s:enumeration value="Platform" />
+          <s:enumeration value="WebClient" />
+          <s:enumeration value="Client" />
+          <s:enumeration value="YSTA" />
+          <s:enumeration value="ATS" />
+          <s:enumeration value="S" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="OperatorJobOwned">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="PhoneOperator" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="TktOperator" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepManager" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CusManager" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Deliverer" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cashier" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="QMailOperator" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LogOffX">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="passportID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogOffXResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ChangePwd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NewPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePwdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangePwdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="XmlSubmit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="XmlSubmitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlSubmitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="XmlSubmitDS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="XmlSubmitDSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlSubmitDSResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateNewOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flights" type="tns:ArrayOfOrderFlightItem" />
+            <s:element minOccurs="0" maxOccurs="1" name="passengers" type="tns:ArrayOfOrderPassengerItem" />
+            <s:element minOccurs="0" maxOccurs="1" name="prices" type="tns:ArrayOfOrderPriceItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOrderFlightItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OrderFlightItem" nillable="true" type="tns:OrderFlightItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OrderFlightItem">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:FlightSegment">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="OrderNo" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="No" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="ProviderCode" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="TktPlatformID" type="tns:B2BPolicyPlatforms" />
+              <s:element minOccurs="0" maxOccurs="1" name="Key" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="FlightSegment">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ElementNo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Carrier" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FlightNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShareCarrier" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShareFlight" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BoardPoint" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BoardPointAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OffPoint" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OffPointAT" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Stop" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepartureDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepartureTime" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ArrivalDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArrivalTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClassCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClassCodeEx" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AirCraft" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="YPrice" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinPrice" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ClassRebate" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuelSurFax" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="AirportTax" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Seat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Group" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NotValidBef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NotValidAft" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Allow" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActionCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BookingOffice" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FltType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Farebasis" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TicketOffice" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PriceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CrsPnr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PNR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CarrierCustomerNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverstepPriceReason" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PriceType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ICSPNR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OriginalPNR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OriginalFlight" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsReschdule" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="B2BPolicyPlatforms">
+        <s:restriction base="s:string">
+          <s:enumeration value="YeeSoho" />
+          <s:enumeration value="ChinaPNRNetB2B" />
+          <s:enumeration value="Beijing51Book" />
+          <s:enumeration value="PiaoMeng" />
+          <s:enumeration value="ChengDu517Na" />
+          <s:enumeration value="TravelSky" />
+          <s:enumeration value="I_SHA0255" />
+          <s:enumeration value="I_BJS0027" />
+          <s:enumeration value="I_CTU0120" />
+          <s:enumeration value="BaiTour" />
+          <s:enumeration value="I_BJS0042" />
+          <s:enumeration value="I_BJS0069" />
+          <s:enumeration value="AliDzNetB2B" />
+          <s:enumeration value="ChengDu8000Yi" />
+          <s:enumeration value="JinRi" />
+          <s:enumeration value="YeeXing" />
+          <s:enumeration value="YeeGo" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfOrderPassengerItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OrderPassengerItem" nillable="true" type="tns:OrderPassengerItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OrderPassengerItem">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:PassengerSegment">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Key" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CountryName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="VisaCountryName" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="PassengerSegment">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="psrlevel" type="tns:PassengerLevel" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ElementNo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PsgID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerPsgID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PsgType" type="tns:CRSPassengerTypes" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BirthDay" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CarrierPsgID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TicketNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MobilePhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CarrierCard" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsueSum" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsueFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NetInsueFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsueProductID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ServiceFee" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Gender" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FNNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CKProduct" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CKCardNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CardValidDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="VisaCountry" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PsrLevel" type="tns:PassengerLevel" />
+          <s:element minOccurs="0" maxOccurs="1" name="Warning" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InsuranceFlightNo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="PassengerLevel">
+        <s:restriction base="s:string">
+          <s:enumeration value="Generral" />
+          <s:enumeration value="VIP" />
+          <s:enumeration value="SVIP" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="CRSPassengerTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="ADT" />
+          <s:enumeration value="INF" />
+          <s:enumeration value="CHD" />
+          <s:enumeration value="UM" />
+          <s:enumeration value="MIP" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfOrderPriceItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OrderPriceItem" nillable="true" type="tns:OrderPriceItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OrderPriceItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="PriceKey" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CusFare" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fare" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fare2" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="AirportTax" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuelTax" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TaxAmount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerGain" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerGain2" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerMoney" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="AgentGain" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="AgentGain2" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="AgentMoney" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TktNetPrice" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PaymentFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="BusinessFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="BookingFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="RefundFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ChangeFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="AffixFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TktCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BalanceMoney" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerFee1" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerFee2" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerReturnGain" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="VipCustomerFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="AgentFee1" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="AgentFee2" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverInvoice" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurSupplierMoney" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="SupplierMoney" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductType" type="tns:ProductTypes" />
+          <s:element minOccurs="0" maxOccurs="1" name="PriceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PriceRemark" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProviderCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CrsPnr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PsrType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PsrCount" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Airline" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TktDetail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ISPriceSQ" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SAgentFee1" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="SAgentGain" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="TicketOffice" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CarrierChangeFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CarrierSettleSt" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CarrierSettlerAdjust" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="CarrierSettleDt" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ProductTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="JP" />
+          <s:enumeration value="BX" />
+          <s:enumeration value="HC" />
+          <s:enumeration value="JD" />
+          <s:enumeration value="GN" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="CreateNewOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateNewOrderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerPolicy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerPolicyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerPolicyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="Operator" nillable="true" type="tns:Operator" />
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TestSoapIn">
+    <wsdl:part name="parameters" element="tns:Test" />
+  </wsdl:message>
+  <wsdl:message name="TestSoapOut">
+    <wsdl:part name="parameters" element="tns:TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginForOneSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginForOne" />
+  </wsdl:message>
+  <wsdl:message name="LoginForOneSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginForOneResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginByCardNoSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginByCardNo" />
+  </wsdl:message>
+  <wsdl:message name="LoginByCardNoSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginByCardNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginExSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginEx" />
+  </wsdl:message>
+  <wsdl:message name="LoginExSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginExResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLoginResultSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLoginResult" />
+  </wsdl:message>
+  <wsdl:message name="GetLoginResultSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLoginResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogOffXSoapIn">
+    <wsdl:part name="parameters" element="tns:LogOffX" />
+  </wsdl:message>
+  <wsdl:message name="LogOffXSoapOut">
+    <wsdl:part name="parameters" element="tns:LogOffXResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangePwdSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangePwd" />
+  </wsdl:message>
+  <wsdl:message name="ChangePwdSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangePwdResponse" />
+  </wsdl:message>
+  <wsdl:message name="XmlSubmitSoapIn">
+    <wsdl:part name="parameters" element="tns:XmlSubmit" />
+  </wsdl:message>
+  <wsdl:message name="XmlSubmitSoapOut">
+    <wsdl:part name="parameters" element="tns:XmlSubmitResponse" />
+  </wsdl:message>
+  <wsdl:message name="XmlSubmitDSSoapIn">
+    <wsdl:part name="parameters" element="tns:XmlSubmitDS" />
+  </wsdl:message>
+  <wsdl:message name="XmlSubmitDSSoapOut">
+    <wsdl:part name="parameters" element="tns:XmlSubmitDSResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateNewOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateNewOrder" />
+  </wsdl:message>
+  <wsdl:message name="CreateNewOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateNewOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerPolicySoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerPolicy" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerPolicySoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerPolicyResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestHttpGetIn" />
+  <wsdl:message name="TestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpGetIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginForOneHttpGetIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginForOneHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginByCardNoHttpGetIn">
+    <wsdl:part name="CardNo" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginByCardNoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginExHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="passport" type="s:string" />
+    <wsdl:part name="usertype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginExHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLoginResultHttpGetIn">
+    <wsdl:part name="passportID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLoginResultHttpGetOut">
+    <wsdl:part name="Body" element="tns:Operator" />
+  </wsdl:message>
+  <wsdl:message name="LogOffXHttpGetIn">
+    <wsdl:part name="passportID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LogOffXHttpGetOut" />
+  <wsdl:message name="ChangePwdHttpGetIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="NewPassword" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ChangePwdHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="XmlSubmitHttpGetIn">
+    <wsdl:part name="identity" type="s:string" />
+    <wsdl:part name="request" type="s:string" />
+    <wsdl:part name="filter" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="XmlSubmitHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerPolicyHttpGetIn">
+    <wsdl:part name="identity" type="s:string" />
+    <wsdl:part name="request" type="s:string" />
+    <wsdl:part name="filter" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerPolicyHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="TestHttpPostIn" />
+  <wsdl:message name="TestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpPostIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginForOneHttpPostIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginForOneHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginByCardNoHttpPostIn">
+    <wsdl:part name="CardNo" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginByCardNoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginExHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="passport" type="s:string" />
+    <wsdl:part name="usertype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginExHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLoginResultHttpPostIn">
+    <wsdl:part name="passportID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLoginResultHttpPostOut">
+    <wsdl:part name="Body" element="tns:Operator" />
+  </wsdl:message>
+  <wsdl:message name="LogOffXHttpPostIn">
+    <wsdl:part name="passportID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LogOffXHttpPostOut" />
+  <wsdl:message name="ChangePwdHttpPostIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="NewPassword" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ChangePwdHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="XmlSubmitHttpPostIn">
+    <wsdl:part name="identity" type="s:string" />
+    <wsdl:part name="request" type="s:string" />
+    <wsdl:part name="filter" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="XmlSubmitHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerPolicyHttpPostIn">
+    <wsdl:part name="identity" type="s:string" />
+    <wsdl:part name="request" type="s:string" />
+    <wsdl:part name="filter" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerPolicyHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="Test">
+      <wsdl:input message="tns:TestSoapIn" />
+      <wsdl:output message="tns:TestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">登录企业航旅通系统</wsdl:documentation>
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginForOne">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">登录企业航旅通系统(分销与后台用户)</wsdl:documentation>
+      <wsdl:input message="tns:LoginForOneSoapIn" />
+      <wsdl:output message="tns:LoginForOneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginByCardNo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">按会员号登录系统</wsdl:documentation>
+      <wsdl:input message="tns:LoginByCardNoSoapIn" />
+      <wsdl:output message="tns:LoginByCardNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">登录企业航旅通系统</wsdl:documentation>
+      <wsdl:input message="tns:LoginExSoapIn" />
+      <wsdl:output message="tns:LoginExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginResult">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取当前的登录结果</wsdl:documentation>
+      <wsdl:input message="tns:GetLoginResultSoapIn" />
+      <wsdl:output message="tns:GetLoginResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LogOffX">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">断开登录</wsdl:documentation>
+      <wsdl:input message="tns:LogOffXSoapIn" />
+      <wsdl:output message="tns:LogOffXSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">修改企业航旅通登录密码</wsdl:documentation>
+      <wsdl:input message="tns:ChangePwdSoapIn" />
+      <wsdl:output message="tns:ChangePwdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="XmlSubmit">
+      <wsdl:input message="tns:XmlSubmitSoapIn" />
+      <wsdl:output message="tns:XmlSubmitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="XmlSubmitDS">
+      <wsdl:input message="tns:XmlSubmitDSSoapIn" />
+      <wsdl:output message="tns:XmlSubmitDSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewOrder">
+      <wsdl:input message="tns:CreateNewOrderSoapIn" />
+      <wsdl:output message="tns:CreateNewOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerPolicy">
+      <wsdl:input message="tns:GetCustomerPolicySoapIn" />
+      <wsdl:output message="tns:GetCustomerPolicySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpGet">
+    <wsdl:operation name="Test">
+      <wsdl:input message="tns:TestHttpGetIn" />
+      <wsdl:output message="tns:TestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">登录企业航旅通系统</wsdl:documentation>
+      <wsdl:input message="tns:LoginHttpGetIn" />
+      <wsdl:output message="tns:LoginHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginForOne">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">登录企业航旅通系统(分销与后台用户)</wsdl:documentation>
+      <wsdl:input message="tns:LoginForOneHttpGetIn" />
+      <wsdl:output message="tns:LoginForOneHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginByCardNo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">按会员号登录系统</wsdl:documentation>
+      <wsdl:input message="tns:LoginByCardNoHttpGetIn" />
+      <wsdl:output message="tns:LoginByCardNoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">登录企业航旅通系统</wsdl:documentation>
+      <wsdl:input message="tns:LoginExHttpGetIn" />
+      <wsdl:output message="tns:LoginExHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginResult">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取当前的登录结果</wsdl:documentation>
+      <wsdl:input message="tns:GetLoginResultHttpGetIn" />
+      <wsdl:output message="tns:GetLoginResultHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LogOffX">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">断开登录</wsdl:documentation>
+      <wsdl:input message="tns:LogOffXHttpGetIn" />
+      <wsdl:output message="tns:LogOffXHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">修改企业航旅通登录密码</wsdl:documentation>
+      <wsdl:input message="tns:ChangePwdHttpGetIn" />
+      <wsdl:output message="tns:ChangePwdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="XmlSubmit">
+      <wsdl:input message="tns:XmlSubmitHttpGetIn" />
+      <wsdl:output message="tns:XmlSubmitHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerPolicy">
+      <wsdl:input message="tns:GetCustomerPolicyHttpGetIn" />
+      <wsdl:output message="tns:GetCustomerPolicyHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpPost">
+    <wsdl:operation name="Test">
+      <wsdl:input message="tns:TestHttpPostIn" />
+      <wsdl:output message="tns:TestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">登录企业航旅通系统</wsdl:documentation>
+      <wsdl:input message="tns:LoginHttpPostIn" />
+      <wsdl:output message="tns:LoginHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginForOne">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">登录企业航旅通系统(分销与后台用户)</wsdl:documentation>
+      <wsdl:input message="tns:LoginForOneHttpPostIn" />
+      <wsdl:output message="tns:LoginForOneHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginByCardNo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">按会员号登录系统</wsdl:documentation>
+      <wsdl:input message="tns:LoginByCardNoHttpPostIn" />
+      <wsdl:output message="tns:LoginByCardNoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">登录企业航旅通系统</wsdl:documentation>
+      <wsdl:input message="tns:LoginExHttpPostIn" />
+      <wsdl:output message="tns:LoginExHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginResult">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取当前的登录结果</wsdl:documentation>
+      <wsdl:input message="tns:GetLoginResultHttpPostIn" />
+      <wsdl:output message="tns:GetLoginResultHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LogOffX">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">断开登录</wsdl:documentation>
+      <wsdl:input message="tns:LogOffXHttpPostIn" />
+      <wsdl:output message="tns:LogOffXHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">修改企业航旅通登录密码</wsdl:documentation>
+      <wsdl:input message="tns:ChangePwdHttpPostIn" />
+      <wsdl:output message="tns:ChangePwdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="XmlSubmit">
+      <wsdl:input message="tns:XmlSubmitHttpPostIn" />
+      <wsdl:output message="tns:XmlSubmitHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerPolicy">
+      <wsdl:input message="tns:GetCustomerPolicyHttpPostIn" />
+      <wsdl:output message="tns:GetCustomerPolicyHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Test">
+      <soap:operation soapAction="http://tempuri.org/Test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginForOne">
+      <soap:operation soapAction="http://tempuri.org/LoginForOne" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginByCardNo">
+      <soap:operation soapAction="http://tempuri.org/LoginByCardNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginEx">
+      <soap:operation soapAction="http://tempuri.org/LoginEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginResult">
+      <soap:operation soapAction="http://tempuri.org/GetLoginResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOffX">
+      <soap:operation soapAction="http://tempuri.org/LogOffX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <soap:operation soapAction="http://tempuri.org/ChangePwd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XmlSubmit">
+      <soap:operation soapAction="http://tempuri.org/XmlSubmit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XmlSubmitDS">
+      <soap:operation soapAction="http://tempuri.org/XmlSubmitDS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewOrder">
+      <soap:operation soapAction="http://tempuri.org/CreateNewOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerPolicy">
+      <soap:operation soapAction="http://tempuri.org/GetCustomerPolicy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Test">
+      <soap12:operation soapAction="http://tempuri.org/Test" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginForOne">
+      <soap12:operation soapAction="http://tempuri.org/LoginForOne" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginByCardNo">
+      <soap12:operation soapAction="http://tempuri.org/LoginByCardNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginEx">
+      <soap12:operation soapAction="http://tempuri.org/LoginEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginResult">
+      <soap12:operation soapAction="http://tempuri.org/GetLoginResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOffX">
+      <soap12:operation soapAction="http://tempuri.org/LogOffX" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <soap12:operation soapAction="http://tempuri.org/ChangePwd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XmlSubmit">
+      <soap12:operation soapAction="http://tempuri.org/XmlSubmit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XmlSubmitDS">
+      <soap12:operation soapAction="http://tempuri.org/XmlSubmitDS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewOrder">
+      <soap12:operation soapAction="http://tempuri.org/CreateNewOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerPolicy">
+      <soap12:operation soapAction="http://tempuri.org/GetCustomerPolicy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpGet" type="tns:ServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Test">
+      <http:operation location="/Test" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <http:operation location="/Login" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginForOne">
+      <http:operation location="/LoginForOne" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginByCardNo">
+      <http:operation location="/LoginByCardNo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginEx">
+      <http:operation location="/LoginEx" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginResult">
+      <http:operation location="/GetLoginResult" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOffX">
+      <http:operation location="/LogOffX" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <http:operation location="/ChangePwd" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XmlSubmit">
+      <http:operation location="/XmlSubmit" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerPolicy">
+      <http:operation location="/GetCustomerPolicy" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpPost" type="tns:ServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Test">
+      <http:operation location="/Test" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <http:operation location="/Login" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginForOne">
+      <http:operation location="/LoginForOne" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginByCardNo">
+      <http:operation location="/LoginByCardNo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginEx">
+      <http:operation location="/LoginEx" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginResult">
+      <http:operation location="/GetLoginResult" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOffX">
+      <http:operation location="/LogOffX" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <http:operation location="/ChangePwd" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XmlSubmit">
+      <http:operation location="/XmlSubmit" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerPolicy">
+      <http:operation location="/GetCustomerPolicy" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://fxb2b.8222666.com/aois/ysta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://fxb2b.8222666.com/aois/ysta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpGet" binding="tns:ServiceHttpGet">
+      <http:address location="http://fxb2b.8222666.com/aois/ysta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpPost" binding="tns:ServiceHttpPost">
+      <http:address location="http://fxb2b.8222666.com/aois/ysta.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

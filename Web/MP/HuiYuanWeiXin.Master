@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HuiYuanWeiXin.master.cs" Inherits="Eyousoft_yhq.Web.MP.HuiYuanWeiXin" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>
+        <%=YeMianTitle%></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="/css/weixin/basic.css?v=1" type="text/css" media="screen" />
+
+    <asp:ContentPlaceHolder ID="YeMianHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <asp:ContentPlaceHolder ID="YeMianBody" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

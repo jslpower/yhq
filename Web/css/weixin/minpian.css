@@ -1,0 +1,77 @@
+.user_header{ background:#0481ea; padding-top:35px; overflow:hidden; color:#fff;}
+.user_01{ height:90px; text-align:center; position:relative;}
+
+.user_touxian{width:80px; height:80px;border:#55aaf1 solid 5px; overflow:hidden; position:absolute; left:50%; top:0; margin-left:-45px;}
+.user_touxian img{ width:80px; height:80px;}
+
+.user_01 .leftside{ position:absolute; left:10px; top:0; z-index:2;color:#fff; text-align:left;}
+.code_small{width:44px; height:44px; background:#fff;margin-bottom:4px;}
+.code_small img{ width:44px; height:44px;}
+
+@media screen and (max-width:360px){
+.user_01 .leftside{ font-size:12px; left:5px;}
+	}
+.user_01 .rightside{ position:absolute; right:15px; top:0;}
+.user_01 .shezhi,.user_01 .store{padding-top:28px; color:#fff; width:40px; text-align:right; font-size:12px;}
+.user_01 .shezhi:before,.user_01 .store:before{background:url(../images/ico.png) no-repeat;width:24px; height:24px; content:""; position:absolute; right:0; top:0;}
+.user_01 .shezhi:before{ background-position:0 0;}
+.user_01 .store:before{ background-position:0 -52px;}
+
+.user_name{ font-size:18px; text-align:center; padding:10px 0;}
+.user_job{ font-size:16px; text-align:center; padding:10px 0; border-top:#48a1eb solid 1px;}
+
+.user_nav{ padding:5px 0; background:#0661ae; overflow:hidden;}
+.user_nav li{ box-sizing:border-box; text-align:center; color:#fff; float:left;border-right:#1079d2 solid 1px; width:25%;}
+.user_nav li span{ font-size:12px; display:inline-block; position:relative;}
+.user_nav li p{ font-size:20px; font-family:Arial; display:block;}
+.user_nav li span.zan{ background:url(../images/zan.png) no-repeat left center; padding-left:15px;}
+
+.user-mask{position:fixed;width:100%;height:100%;top:0;left:0;z-index:10000;background:rgba(0,0,0,.6);overflow:auto}
+.user-mask-cnt{ width:198px; height:280px; position:absolute; top:50%; left:50%; margin:-160px 0 0 -119px; background:#fff; padding:20px;}
+
+.code_big{width:198px; height:198px; padding:5px 0; overflow:hidden;}
+.code_big img{width:198px; height:198px; vertical-align:top;}
+
+.zan_box{ padding:10px; overflow:hidden;}
+.zan_box h3{ color:#4f4f4f; font-size:14px;}
+.zan_list:after{clear: both; content: " ";display: block;height: 0;overflow: hidden;}
+.zan_list li{width:25%; float:left; text-align:center; padding:10px 0;}
+.zan_list li .touxian{width:56px; height:56px; overflow:hidden; margin:0 auto;}
+.zan_list li .touxian img{width:56px; height:56px;}
+.zan_list li .touxian_name{ height:21px; line-height:21px;padding-top:5px; color:#4f4f4f; overflow:hidden;}
+
+
+@media screen and (max-width:360px){
+.zan_list li .touxian_name{ height:18px; line-height:18px;font-size:12px;}
+	}
+	
+.zan_list li .gz_btn,.zan_list li .gz_btn_ok{width:60px; height:23px; line-height:23px; text-align:center; display:inline-block;font-size:12px; margin-top:5px;}	
+.zan_list li .gz_btn{ color:#fff;background:#fe6d14; }
+.zan_list li .gz_btn_ok{ color:#4f4f4f; background:#bdbdbd;}
+
+.liuyan_txt{ padding:0 50px 10px 56px; overflow:hidden; position:relative;}
+.liuyan_txt .huifu{ position:absolute; right:10px; top:0; width:30px; height:24px; line-height:24px; color:#0481ea;}
+
+.liuyan_huifu{padding:10px;border-top:#e1e1e1 solid 1px; overflow:hidden;}
+
+.shezhi_tx{ padding:10px; overflow:hidden; height:56px; line-height:56px;font-size:16px; position:relative;}
+.touxian_ok{ position:absolute; right:76px;top:10px; width:56px; height:56px; overflow:hidden;}
+.touxian_ok img{width:56px; height:56px;}
+.touxian_upload{ border:#979797 solid 5px; width:46px; height:46px; cursor:pointer; display:inline-block; position:absolute; right:10px; top:10px;}
+.touxian_upload:before{ position:absolute;width:22px; height:22px; left:12px; top:12px; content:""; background:url(../images/ico.png) no-repeat; background-position:0 -103px;}
+
+.form_list{ background:#fff; overflow:hidden;}
+.form_list li{width:100%; height:49px; border-bottom:#f4f4f4 solid 1px; padding-left:80px; padding-right:15px; box-sizing:border-box; line-height:48px; position:relative;}
+.form_list li .label_name{ position:absolute; left:10px; top:0; display:inline-block;width:auto; text-align:left; color:#4f4f4f; font-size:16px;}
+.font_hei{ color:#4f4f4f;}
+
+
+.weixinhao{ display:inline-block;width:100%; text-align:right; color:#bdbdbd;}
+
+.liuyan_input{ border:#e1e1e1 solid 1px; box-sizing:border-box; font-size:12px;line-height:20px; width:100%; height:62px;}
+
+
+.user_nav li span em{width:7px; height:7px; border:#fff solid 1px; background:#f00; display:inline-block; position:absolute; right:-8px; top:0;}
+
+.money_input{width:174px; height:40px; border:#ffd83c solid 2px; padding:0 10px; background:#fff; margin:0 auto; color:#4f4f4f; font-size:16px; line-height:40px;}
+.money_input input{border:none 0;width:150px; height:40px; color:#000; text-align:center;}

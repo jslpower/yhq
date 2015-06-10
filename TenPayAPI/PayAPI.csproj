@@ -1,0 +1,196 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51A1B017-51AE-4658-ABE4-274F75B7CBB3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>PayAPI</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PayAPI</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+      <HintPath>mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <HintPath>System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+      <HintPath>System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <HintPath>System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.Xml</Name>
+      <HintPath>System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common.Config\ConfigModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Model.Tencent\BusinessDescribe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Model.Tencent\PrePay.cs" />
+    <Compile Include="PayAPI.Model.Tencent\Royalty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Model.Tencent\RoyaltyList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Model.Tencent\RoyaltyRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Model.Tencent\TenPayTrade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Model.Tencent\TenPayTradeNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Model\Attach.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Model\AttachCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Model\Error.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Model\Order.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Model\PayTrade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Model\PayTradeNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Tencent.Core\MD5Util.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Tencent.Core\PayRequestHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Tencent.Core\PayResponseHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Tencent.Core\RequestHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Tencent.Core\ResponseHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Tencent.Core\SHA1Util.cs" />
+    <Compile Include="PayAPI.Tencent.Core\TenPaySystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Tencent.Core\TenpayUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayAPI.Tencent\Tenpay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request.cs" />
+    <Compile Include="StringExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{0953418F-4565-4DFC-A788-C886E7001696}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

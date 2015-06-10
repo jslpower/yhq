@@ -1,0 +1,18 @@
+.login_form{width:100%; padding:0 20px; box-sizing:border-box; font-size:16px;}
+.login_form li{ position:relative; height:62px;border-bottom:#c1c1c1 solid 1px; padding-left:50px;}
+.login_form s{ background:url(/images/weixin/u-ico.png) no-repeat;display:inline-block;}
+
+.login_form s.ico_user,.login_form s.ico_mima{width:19px; height:21px; position:absolute; top:21px; left:10px;}
+.login_form s.ico_user{ background-position:0 0;}
+.login_form s.ico_mima{ background-position:0 -65px;}
+.login_form .u-input{ height:62px; text-align:left; color:#BDBDBD;}
+
+.shenq_form li{ padding-left:80px; line-height:62px;}
+.shenq_form li .label_name{ position:absolute; left:0; top:0; display:inline-block;width:70px; padding-right:10px; color:#4f4f4f; font-size:16px; line-height:62px; text-align:right;}
+.shenq_form li.txt{ height:158px;}
+.shenq_form li.txt .u-input{ height:120px; font-size:16px; margin-top:19px;}
+
+.zhongj_mx{padding:10px;background:#fff; border:#e1e1e1 solid 1px;}
+.zhongj_mx_head{ height:32px;width:100%;border-bottom:#DBDBDB solid 1px;}
+.zhongj_mx_head li{  text-align:center; font-weight:normal; line-height:32px; float:left;width:50%; color:#4f4f4f;}
+.zhongj_mx_list li{ width:50%; float:left; height:30px;text-align:center; color:#b2b2b2; line-height:30px;}

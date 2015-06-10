@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WeiDian.master.cs" Inherits="Eyousoft_yhq.Web.MP.WeiDian" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title id="MTitle">
+        <%=YeMianTitle%></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
+
+    <%if (IsLoadDefaultCss)
+      { %>
+    <link rel="stylesheet" href="/css/weixin/basic.css" type="text/css" media="screen" />
+    <%} %>
+    <asp:ContentPlaceHolder ID="YeMianHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <asp:ContentPlaceHolder ID="YeMianBody" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+    <script type="text/javascript" src="http://files.cnblogs.com/mofish/sha1.js"></script>
+
+    <script type="text/javascript">
+
+        var tmstamp = (new Date()).valueOf();
+        var signStr = 'jsapi_ticket=<%=EyouSoft.Common.Utils.get_weixin_jsapi_ticket() %>&noncestr=Wm3WZYTPz0wzccnW&timestamp=' + tmstamp + '&url=' + location.href
+        var sha = hex_sha1(signStr);
+        wx.config({
+            debug: false,
+            appId: 'wx935e1ca713dff84f',
+            timestamp: tmstamp,
+            nonceStr: 'Wm3WZYTPz0wzccnW',
+            signature: sha,
+            jsApiList: ['onMenuShareAppMessage', 'onMenuShareTimeline', 'onMenuShareQQ', 'onMenuShareWeibo']
+        });
+        var imgUrl = "<%= TXImg%>";
+        var shareTitle = $("#MTitle").text();
+        var lineLink = location.href;
+        var descContent = "<%= WDesc%>";
+        wx.ready(function() {
+            wx.onMenuShareTimeline({
+                title: shareTitle,
+                link: lineLink,
+                imgUrl: imgUrl,
+                success: function() {
+                },
+                cancel: function() {
+                }
+            });
+            wx.onMenuShareAppMessage({
+                title: shareTitle,
+                desc: descContent,
+                link: lineLink,
+                imgUrl: imgUrl,
+                type: 'link',
+                dataUrl: '',
+                success: function() {
+                },
+                cancel: function() {
+                },
+                fail: function() {
+                }
+            });
+            //分享到QQ
+            wx.onMenuShareQQ({
+                title: shareTitle,
+                desc: descContent,
+                link: lineLink,
+                imgUrl: imgUrl,
+                success: function() {
+                },
+                cancel: function() {
+                }
+            });
+            //分享到腾讯微博
+            wx.onMenuShareWeibo({
+                title: shareTitle,
+                desc: descContent,
+                link: lineLink,
+                imgUrl: imgUrl,
+                success: function() {
+                },
+                cancel: function() {
+                }
+            });
+        });
+
+        wx.error(function(res) {
+            //alert(res);
+        }); 
+    </script>
+
+</body>
+</html>

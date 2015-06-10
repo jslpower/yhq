@@ -1,0 +1,48 @@
+﻿.youji_title{ padding:10px 10px 0 10px; font-size:18px;}
+@media screen and (max-width:360px){
+.youji_title{ font-size:16px;}
+	}
+
+.youji_main{ padding:10px;overflow:hidden;}
+.youji_box,.youji_fabu_box{ border:1px solid #E1E1E1; background:#fff; padding:15px; color:#4f4f4f;}
+.youji_box li{ padding-top:20px;}
+.youji_box .title{font-size:18px; text-align:center;}
+.youji_box img{width:99%; margin:5px auto; height: auto;}
+.youji_box p{ word-wrap:break-word;}
+
+.youji_fabu_title{width:100%; height:21px; line-height:21px; position:relative; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box; padding-left:50px;}
+.youji_fabu_title span{ position:absolute; left:0; top:0; display:inline-block;width:50px; text-align:right; color:#4f4f4f;}
+.youji_fabu_title .u-input{ height:20px; border-bottom:#e1e1e1 solid 1px; background:#f4f4f4; text-align:left; color:#505050; font-size:14px;}
+.youji_fabu_titleone{width:100%; height:21px; line-height:21px; position:relative; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box; padding-left:70px;}
+.youji_fabu_titleone span{ position:absolute; left:0; top:0; display:inline-block;width:70px; text-align:right; color:#4f4f4f;}
+.youji_fabu_titleone .u-input{ height:20px; border-bottom:#e1e1e1 solid 1px; background:#f4f4f4; text-align:left; color:#505050; font-size:14px;}
+
+.youji_fabu_box{ position:relative; margin-top:10px;}
+.youji_fabu_box li{ padding-bottom:10px;width:100%;}
+.youji_fabu_box li .uplode_img{width:116px; height:37px; line-height:37px; background:#c5c5c5; display:inline-block; color:#505050; text-align:center;} 
+.youji_fabu_box li.txt{ height:120px;position:relative; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box; padding-left:42px;}
+.youji_fabu_box li.txt span{position:absolute; left:0; top:0; display:inline-block;width:auto; text-align:left; color:#4f4f4f; height:21px;}
+.youji_fabu_box .u-input{width:100%; height:120px; padding:10px; border:#e1e1e1 solid 1px;text-align:left; color:#505050; font-size:14px;}
+
+.del_icon{ position:absolute; right:-6px; top:-6px; background:url(../images/del.png) no-repeat;width:19px; height:19px; display:inline-block;}
+
+
+.add_more{background:#c5c5c5; padding:10px; cursor:pointer;}
+.add_more span{position:relative; padding-left:20px; font-size:16px; color:#4f4f4f;}
+.add_icon:before{width:12px; height:12px; border-radius:50%; position:absolute;left:0;top:50%; border:#444 solid 2px;margin-top:-7px; content:"+"; color:#444; font-size:14px;line-height:12px; text-align:center; font-family:Arial;}
+
+
+.youji_fabu_box .ok{ background:url(/images/ok.gif) no-repeat left center; width:14px; height:14px; display:inline-block; margin-left:10px;}
+
+
+.btn2{width:70px; height:22px; line-height:22px; text-align:center; display:inline-block; color:#fff; background:#fe6d14; position:absolute; right:10px; top:32px;}
+
+.youji_head{ height:50px; position:fixed; top:0; left:0;width:100%; z-index:999; background:#f4f4f4; padding:10px 10px 0 10px; -moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+.youji_head li{width:50%; height:40px; line-height:40px; float:left; background:#d7d7d7;}
+.youji_head li a{ color:#4f4f4f; font-size:16px; display:block; text-align:center;}
+.youji_head li a.on{ color:#fff; background:#0661ae;}
+
+.youji_header{ padding-top:55px;}
+.youji_header .user_01{background:#fff; border-left:#E1E1E1 solid 1px; border-right:#E1E1E1 solid 1px; height:93px;}
+.youji_header .user_touxian{ top:-45px;}
+.youji_header .user_name{ position:absolute; top:45px; left:3%;width:94%; height:27px; line-height:27px; border-bottom:#999 dashed 1px; color:#4c4c4c;}

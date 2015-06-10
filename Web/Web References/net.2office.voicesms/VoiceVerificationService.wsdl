@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s0="http://tempuri.org" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org">
+      <s:element name="SendVoiceCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="account" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="srcnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="voiceid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="voicetype" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendVoiceCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendVoiceCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendVoiceCodeSoapIn">
+    <wsdl:part name="parameters" element="s0:SendVoiceCode" />
+  </wsdl:message>
+  <wsdl:message name="SendVoiceCodeSoapOut">
+    <wsdl:part name="parameters" element="s0:SendVoiceCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendVoiceCodeHttpGetIn">
+    <wsdl:part name="account" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="srcnum" type="s:string" />
+    <wsdl:part name="descnum" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="voiceid" type="s:string" />
+    <wsdl:part name="voicetype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendVoiceCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendVoiceCodeHttpPostIn">
+    <wsdl:part name="account" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="srcnum" type="s:string" />
+    <wsdl:part name="descnum" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="voiceid" type="s:string" />
+    <wsdl:part name="voicetype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendVoiceCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="VoiceVerificationServiceSoap">
+    <wsdl:operation name="SendVoiceCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">云验证-语音验证</wsdl:documentation>
+      <wsdl:input message="tns:SendVoiceCodeSoapIn" />
+      <wsdl:output message="tns:SendVoiceCodeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="VoiceVerificationServiceHttpGet">
+    <wsdl:operation name="SendVoiceCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">云验证-语音验证</wsdl:documentation>
+      <wsdl:input message="tns:SendVoiceCodeHttpGetIn" />
+      <wsdl:output message="tns:SendVoiceCodeHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="VoiceVerificationServiceHttpPost">
+    <wsdl:operation name="SendVoiceCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">云验证-语音验证</wsdl:documentation>
+      <wsdl:input message="tns:SendVoiceCodeHttpPostIn" />
+      <wsdl:output message="tns:SendVoiceCodeHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VoiceVerificationServiceSoap" type="tns:VoiceVerificationServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendVoiceCode">
+      <soap:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VoiceVerificationServiceSoap12" type="tns:VoiceVerificationServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendVoiceCode">
+      <soap12:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VoiceVerificationServiceHttpGet" type="tns:VoiceVerificationServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="SendVoiceCode">
+      <http:operation location="/SendVoiceCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VoiceVerificationServiceHttpPost" type="tns:VoiceVerificationServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="SendVoiceCode">
+      <http:operation location="/SendVoiceCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VoiceVerificationService">
+    <wsdl:port name="VoiceVerificationServiceSoap" binding="tns:VoiceVerificationServiceSoap">
+      <soap:address location="http://voicesms.2office.net:8080/WebService/VoiceVerificationService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VoiceVerificationServiceSoap12" binding="tns:VoiceVerificationServiceSoap12">
+      <soap12:address location="http://voicesms.2office.net:8080/WebService/VoiceVerificationService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VoiceVerificationServiceHttpGet" binding="tns:VoiceVerificationServiceHttpGet">
+      <http:address location="http://voicesms.2office.net:8080/WebService/VoiceVerificationService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VoiceVerificationServiceHttpPost" binding="tns:VoiceVerificationServiceHttpPost">
+      <http:address location="http://voicesms.2office.net:8080/WebService/VoiceVerificationService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

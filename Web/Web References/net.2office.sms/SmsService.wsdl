@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s0="http://tempuri.org" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org">
+      <s:element name="SendSms3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="account" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="channel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sendType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSms3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSms3Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsIncludeKeyWord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsIncludeKeyWordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IsIncludeKeyWordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSmsMoney2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="account" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSmsMoney2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSmsMoney2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSms5">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="account" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="channel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sendType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSms5Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSms5Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendTimingSms">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="account" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sendTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendTimingSmsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendTimingSmsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BatchSendSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="account" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsinfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="channel" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BatchSendSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BatchSendSMSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendSms3SoapIn">
+    <wsdl:part name="parameters" element="s0:SendSms3" />
+  </wsdl:message>
+  <wsdl:message name="SendSms3SoapOut">
+    <wsdl:part name="parameters" element="s0:SendSms3Response" />
+  </wsdl:message>
+  <wsdl:message name="IsIncludeKeyWordSoapIn">
+    <wsdl:part name="parameters" element="s0:IsIncludeKeyWord" />
+  </wsdl:message>
+  <wsdl:message name="IsIncludeKeyWordSoapOut">
+    <wsdl:part name="parameters" element="s0:IsIncludeKeyWordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSmsMoney2SoapIn">
+    <wsdl:part name="parameters" element="s0:GetSmsMoney2" />
+  </wsdl:message>
+  <wsdl:message name="GetSmsMoney2SoapOut">
+    <wsdl:part name="parameters" element="s0:GetSmsMoney2Response" />
+  </wsdl:message>
+  <wsdl:message name="SendSms5SoapIn">
+    <wsdl:part name="parameters" element="s0:SendSms5" />
+  </wsdl:message>
+  <wsdl:message name="SendSms5SoapOut">
+    <wsdl:part name="parameters" element="s0:SendSms5Response" />
+  </wsdl:message>
+  <wsdl:message name="SendTimingSmsSoapIn">
+    <wsdl:part name="parameters" element="s0:SendTimingSms" />
+  </wsdl:message>
+  <wsdl:message name="SendTimingSmsSoapOut">
+    <wsdl:part name="parameters" element="s0:SendTimingSmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="BatchSendSMSSoapIn">
+    <wsdl:part name="parameters" element="s0:BatchSendSMS" />
+  </wsdl:message>
+  <wsdl:message name="BatchSendSMSSoapOut">
+    <wsdl:part name="parameters" element="s0:BatchSendSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSms3HttpGetIn">
+    <wsdl:part name="account" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="channel" type="s:string" />
+    <wsdl:part name="smsid" type="s:string" />
+    <wsdl:part name="sendType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSms3HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IsIncludeKeyWordHttpGetIn">
+    <wsdl:part name="content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IsIncludeKeyWordHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSmsMoney2HttpGetIn">
+    <wsdl:part name="account" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSmsMoney2HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSms5HttpGetIn">
+    <wsdl:part name="account" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="channel" type="s:string" />
+    <wsdl:part name="smsid" type="s:string" />
+    <wsdl:part name="sendType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSms5HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendTimingSmsHttpGetIn">
+    <wsdl:part name="account" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="smsid" type="s:string" />
+    <wsdl:part name="sendTime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendTimingSmsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="BatchSendSMSHttpGetIn">
+    <wsdl:part name="account" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="smsinfo" type="s:string" />
+    <wsdl:part name="smsid" type="s:string" />
+    <wsdl:part name="channel" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="BatchSendSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSms3HttpPostIn">
+    <wsdl:part name="account" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="channel" type="s:string" />
+    <wsdl:part name="smsid" type="s:string" />
+    <wsdl:part name="sendType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSms3HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IsIncludeKeyWordHttpPostIn">
+    <wsdl:part name="content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IsIncludeKeyWordHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSmsMoney2HttpPostIn">
+    <wsdl:part name="account" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSmsMoney2HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSms5HttpPostIn">
+    <wsdl:part name="account" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="channel" type="s:string" />
+    <wsdl:part name="smsid" type="s:string" />
+    <wsdl:part name="sendType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSms5HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendTimingSmsHttpPostIn">
+    <wsdl:part name="account" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="smsid" type="s:string" />
+    <wsdl:part name="sendTime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendTimingSmsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="BatchSendSMSHttpPostIn">
+    <wsdl:part name="account" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="smsinfo" type="s:string" />
+    <wsdl:part name="smsid" type="s:string" />
+    <wsdl:part name="channel" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="BatchSendSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="SmsServiceSoap">
+    <wsdl:operation name="SendSms3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:SendSms3SoapIn" />
+      <wsdl:output message="tns:SendSms3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsIncludeKeyWord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">关键字判断-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:IsIncludeKeyWordSoapIn" />
+      <wsdl:output message="tns:IsIncludeKeyWordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSmsMoney2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:GetSmsMoney2SoapIn" />
+      <wsdl:output message="tns:GetSmsMoney2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSms5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信5-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:SendSms5SoapIn" />
+      <wsdl:output message="tns:SendSms5SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTimingSms">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">定时短信-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:SendTimingSmsSoapIn" />
+      <wsdl:output message="tns:SendTimingSmsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BatchSendSMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">批量单条短信-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:BatchSendSMSSoapIn" />
+      <wsdl:output message="tns:BatchSendSMSSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SmsServiceHttpGet">
+    <wsdl:operation name="SendSms3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:SendSms3HttpGetIn" />
+      <wsdl:output message="tns:SendSms3HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsIncludeKeyWord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">关键字判断-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:IsIncludeKeyWordHttpGetIn" />
+      <wsdl:output message="tns:IsIncludeKeyWordHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSmsMoney2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:GetSmsMoney2HttpGetIn" />
+      <wsdl:output message="tns:GetSmsMoney2HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSms5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信5-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:SendSms5HttpGetIn" />
+      <wsdl:output message="tns:SendSms5HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTimingSms">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">定时短信-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:SendTimingSmsHttpGetIn" />
+      <wsdl:output message="tns:SendTimingSmsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BatchSendSMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">批量单条短信-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:BatchSendSMSHttpGetIn" />
+      <wsdl:output message="tns:BatchSendSMSHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SmsServiceHttpPost">
+    <wsdl:operation name="SendSms3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:SendSms3HttpPostIn" />
+      <wsdl:output message="tns:SendSms3HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsIncludeKeyWord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">关键字判断-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:IsIncludeKeyWordHttpPostIn" />
+      <wsdl:output message="tns:IsIncludeKeyWordHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSmsMoney2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:GetSmsMoney2HttpPostIn" />
+      <wsdl:output message="tns:GetSmsMoney2HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSms5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信5-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:SendSms5HttpPostIn" />
+      <wsdl:output message="tns:SendSms5HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTimingSms">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">定时短信-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:SendTimingSmsHttpPostIn" />
+      <wsdl:output message="tns:SendTimingSmsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BatchSendSMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">批量单条短信-标准接口,java使用</wsdl:documentation>
+      <wsdl:input message="tns:BatchSendSMSHttpPostIn" />
+      <wsdl:output message="tns:BatchSendSMSHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SmsServiceSoap" type="tns:SmsServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendSms3">
+      <soap:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsIncludeKeyWord">
+      <soap:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSmsMoney2">
+      <soap:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSms5">
+      <soap:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTimingSms">
+      <soap:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BatchSendSMS">
+      <soap:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SmsServiceSoap12" type="tns:SmsServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendSms3">
+      <soap12:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsIncludeKeyWord">
+      <soap12:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSmsMoney2">
+      <soap12:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSms5">
+      <soap12:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTimingSms">
+      <soap12:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BatchSendSMS">
+      <soap12:operation soapAction="http://tempuri.org" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SmsServiceHttpGet" type="tns:SmsServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="SendSms3">
+      <http:operation location="/SendSms3" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsIncludeKeyWord">
+      <http:operation location="/IsIncludeKeyWord" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSmsMoney2">
+      <http:operation location="/GetSmsMoney2" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSms5">
+      <http:operation location="/SendSms5" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTimingSms">
+      <http:operation location="/SendTimingSms" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BatchSendSMS">
+      <http:operation location="/BatchSendSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SmsServiceHttpPost" type="tns:SmsServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="SendSms3">
+      <http:operation location="/SendSms3" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsIncludeKeyWord">
+      <http:operation location="/IsIncludeKeyWord" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSmsMoney2">
+      <http:operation location="/GetSmsMoney2" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSms5">
+      <http:operation location="/SendSms5" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTimingSms">
+      <http:operation location="/SendTimingSms" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BatchSendSMS">
+      <http:operation location="/BatchSendSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SmsService">
+    <wsdl:port name="SmsServiceSoap" binding="tns:SmsServiceSoap">
+      <soap:address location="http://sms.2office.net:8080/WebService/SmsService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SmsServiceSoap12" binding="tns:SmsServiceSoap12">
+      <soap12:address location="http://sms.2office.net:8080/WebService/SmsService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SmsServiceHttpGet" binding="tns:SmsServiceHttpGet">
+      <http:address location="http://sms.2office.net:8080/WebService/SmsService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SmsServiceHttpPost" binding="tns:SmsServiceHttpPost">
+      <http:address location="http://sms.2office.net:8080/WebService/SmsService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

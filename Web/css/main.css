@@ -1,0 +1,107 @@
+/*****yf-10.24景区图片边框样式*****/
+.jq_pic{width:160px; height:120px; padding:3px; border:#999 solid 1px;margin:5px;}
+.table_basic td{ padding-left:5px;line-height:23px; height:23px;}
+.fontblue{ color:#009;}
+.search_bg{ background:url(../images/search_bg.gif) repeat-x; height:30px; padding-left:15px;}
+.caozuo_bg{ background:url(../images/gongneng_bg.gif) repeat-x; height:25px; padding-left:15px;}
+.zhtai_bg{ background:url(../images/lmnavm.gif) repeat-x; height:32px; padding-left:15px;} 
+a.add_btn{ background:url(../images/tianjiabaocun.gif) no-repeat center center; width:53px; height:17px; padding-top:4px;display:inline-block; text-align:center; font-weight:normal; vertical-align:middle;}
+
+/*****yf-10.25线路状态图片样式*****/
+.guestmenu { display:inline-block; text-align:left; background:url(../images/guestmenu.gif) no-repeat 0 0; width:65px; height:18px; padding-top:5px;padding-left:4px;}
+.guestmenu02{ text-indent:10px;}
+.shangjia,.xiajia,.state1,.state2,.state3,.state4,.state5,.state6{padding:2px 4px 2px 13px; display:inline-block; line-height:14px;}
+a.state1:hover,a.state2:hover,a.state3:hover,a.state4:hover,a.state5:hover{ text-decoration:none;}
+.state1{ border:1px solid #f00;  background:url(../images/state1.gif) no-repeat 5px 2px; color:#f00;}
+.state2{ border:1px solid #E48B00; background:url(../images/state2.gif) no-repeat 5px 2px; color:#E48B00;}
+.state3{ border:1px solid #0296DB;  background:url(../images/state3.gif) no-repeat 5px 2px; color:#0296DB;}
+.state4{ border:1px solid #A4188A; background:url(../images/state4.gif) no-repeat 5px 2px; color:#A4188A;}
+.state5{ border:1px solid #1A9C5A;  background:url(../images/state5.gif) no-repeat 5px 2px; color:#1A9C5A;}
+.state6{ border:1px solid #9AAA0E;  background:url(../images/state6.gif) no-repeat 5px 2px; color:#9AAA0E;}
+.nostate {display:inline-block; width:65px; height:13px; text-align:center; line-height:13px; padding:3px 2px 0px 0; margin-left:5px; margin-top:1px; background:url(../images/nostate.gif) no-repeat left center; padding-left:10px;}
+a.shangjia,a.shangjia:hover{padding:2px 5px;text-align:center;text-decoration:none;background:#ff9070; border:1px #e24912 solid; color:#fff;}
+a.xiajia,a.xiajia:hover{padding:2px 5px;text-align:center;text-decoration:none;background:#a3d869; border:1px #55a51c solid; color:#fff;}
+.keman,a.keman,a.tings,.zhengc,a.zhengc,a.shangjia,a.xiajia{display:inline-block; text-align:center; padding:0 3px; line-height:18px; text-decoration:none; color:#666;}
+
+.kemanbj td { background-color:#FFEED2;}
+a.keman {border:1px solid #c00; background:#FFD188; color:#6F380D; text-decoration:none;}
+a.keman:hover { border:1px solid #c00; background:#FFD188;}
+
+.tingsbj td { background-color:#dadada;  filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);}
+a.tings {border:1px solid #9D9EA0; color:#5D5D5D; background:#DADADA;}
+a.tings:hover {border:1px solid #9D9EA0; background:#DADADA; }
+
+a.zhengc {border:1px solid #79a119; background:#dcf69f; color:#026809;}
+a.zhengc:hover {border:1px solid #79a119; background:#dcf69f;}
+
+
+/*****yf-10.26线路状态图片样式*****/
+/*添加线路**/
+/* TAB 切换效果 */
+.tb_,.tb1_{ background:#fff; height:25px;}
+.tb_ ul,.tb1_ ul{height:25px;}
+.tb_ li,.tb1_ li{float:left;height: 25px;line-height:1.9;width:70px; padding-top:4px;cursor:pointer;}
+/* 用于控制显示与隐藏的css类 */
+.normaltab,.normaltab1{ background-image:url(../images/qiehuan0.gif);width:70px; text-align:center;height:25px; background-repeat: no-repeat; }
+.hovertab,.hovertab1{ background-image: url(../images/qiehuan2.gif); width:70px; text-align:center; height:25px; background-repeat: no-repeat;}
+.dis,.dis1{display:block;}
+.undis,.undis1{display:none;}
+
+/*****yf-10.27线路状态图片样式*****/
+/* 导入名单按钮样式 */
+.daorumd a{background:url(../images/anniured-cy.gif) no-repeat 0 0; display:inline-block; margin-left:10px;width:79px; height:23px; color:#D95700; font-weight:bold; text-align:center;  line-height:23px; _padding-top:6px; _height:17px; }
+.daorumd a:hover{background:url(../images/anniured-cy.gif) no-repeat 0 -23px; text-decoration:none; color:#F0680D;}
+
+a.font_f00{ color:#f00; text-decoration:underline;}
+.hr_5{ font-size:0; line-height:0; clear:both; height:5px;}
+.hr_10{ font-size:0; line-height:0; clear:both; height:10px;}
+
+/*****yf-10.28线路状态图片样式*****/
+.no_cuti{ font-weight:normal;}
+
+/*****yf-10.31酒店管理页*****/
+bggray{ background:#efefef;}
+.bgred{ background:#f30; color:#fff;}
+
+/*****yf-12.12*****/
+.toolbj1{background:#fff;}
+.toolbj1 .title{ text-align:left; vertical-align:top; color:#074387; font-size:12px; font-weight:bold;padding-left:5px;}
+.toolbj1 a {margin-top:3px;margin-left:3px; font-weight:normal;background:url(../images/linebg.gif) no-repeat 0 -999em;}
+.toolbj1 a{display:block; float:left; width:95px; height:26px; background-position:0 0; line-height:26px; text-align:center; color:#074387; font-size:12px; margin-top:3px; text-decoration:none;margin-bottom:2px;}
+.toolbj1 a:hover,.toolbj1 a.select{background-position:0 -28px; color:#dc3204;}
+
+.toolbj1 a.addzx{ background:url(../images/tianjiabaocun02.gif) no-repeat center center; width:40px; height:18px; line-height:18px;text-align:center;display:inline-block;  font-weight:normal;}
+
+.ff0000{ color:#ff0000;}
+
+
+
+/**********2013-06-06***********/
+table{ border-collapse:collapse;}
+.searchbox{ background:url(../images/yuancenter.gif) repeat-x 0 0; min-height:50px;_height:50px;line-height:25px; padding-top:10px; padding-bottom:5px; width:100%;}
+
+.searchinput{width:75px; height:15px; border:1px #93b7ce solid; font-size:12px;}
+.searchinput02{ width:200px;}
+.searchinput03{ width:40px;}
+.searchbox label{ margin-left:5px;}
+.searchboxleft{ float:left; width:10px;}
+.searchboxright{float:right;width:10px; position:relative; right:1px; top:-50px; z-index:1;}
+.btnbox{border-bottom:2px #000000 solid; width:99%; height:25px; overflow:hidden; padding-bottom:5px;}
+.btnbox a{ background:url(../images/btnbg.gif) no-repeat 0 0; display:block;line-height:14px;padding:5px 0; width:76px; color:#FFFFFF; font-size:12px; text-align:center;}
+.tablelist{ width:99%; overflow:hidden;}
+.tablelist table th{color:#021f43;background:#bddcf4; white-space:nowrap;}
+.Tborder th,.Tborder td{ border:#fff solid 1px;}
+.odd{ background:#BDDCF4;}
+.even{background:#e3f1fc;}
+.current{ color:#6f6f6f; padding-left:5px;}
+
+.tjbtn{ padding-left:200px; margin-top:10px;}
+.tjbtn li{ float:left; background:url(../images/tjbtnbg02.gif) no-repeat 0 0; width:76px; height:31px; line-height:31px; margin-left:55px;text-align:center;}
+.tjbtn li a{ display:block; font-size:14px; color:#000000; font-weight:bold; }
+.tjbtn li a:hover{ background:url(../images/tjbtnbg.gif) no-repeat 0 0; text-decoration:none; }
+.tjbtn02 a{ display:block; font-size:14px; color:#000000; font-weight:bold; background:url(../images/tjbtnbg02.gif) no-repeat 0 0; width:76px; height:31px; line-height:31px;}
+.tjbtn02 a:hover{ background:url(../images/tjbtnbg.gif) no-repeat 0 0; text-decoration:none; }
+.jixusave a{ display:block; font-size:14px; color:#000000; font-weight:bold; background:url(../images/jixusave.gif) no-repeat 0 0; width:134px; height:31px; line-height:31px;}
+.jixusave a:hover{ background:url(../images/jixusave2.gif) no-repeat 0 0; text-decoration:none; }
+
+.formsize120{ width:120px;}.formsize40{ width:40px;}.formsize50{ width:50px;}.formsize70{ width:70px;}.formsize80{ width:80px;}.formsize140{ width:140px;}.formsize180{ width:180px;}.formsize800{ width:800px;}.formsize450{width:450px;}.formsize600{width:600px;}.formsize260{ width:260px;}.formsize100{ width:100px;}

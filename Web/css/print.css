@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ background:#fff; font-size:12px; font-family:Verdana, Geneva, sans-serif,宋体; margin:5px auto; color:#000;}
+a{ text-decoration:none; cursor:pointer;}
+table{ border-collapse:collapse; margin-top:7px;}
+input{}
+.font24{font-size:24px;font-weight: bold;}
+.font20{ font-size:20px;font-weight: bold;}
+.font18{ font-size:18px;}
+.font16{ font-size:16px;}
+
+.Basic_t th{ font-size:16px; font-weight:bold; text-align:center;}
+.Basic_t td{ line-height:230%; font-size:14px;}
+
+.Basic_input{ border-bottom:#000 solid 1px;border-top: none 0; border-right:none 0; border-left:none 0;}
+.input300{width:300px;}
+.input120{width:120px;}
+.input80{width:80px;}
+.input60{width:60px;}
+.input30{width:30px;}
+.input425{width:425px;}
+.input200{width:200px;}
+.input660{width:660px;}
+
+.table_cont th{ font-size:14px; font-weight:bold; text-align:center;}
+.table_cont td{ line-height:200%; font-size:14px;}
+.table_cont td.indent{ text-indent:28px;}
+.table_cont td.indent2{ text-indent:56px;}
+
+.table_border td{ border:#000 solid 1px;}
+
+.input_Noborder{border:none 0; text-align:center;}

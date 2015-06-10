@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Eyousoft_yhq.Web.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Eyousoft_yhq_Web_cn_myvo_smc_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://smc.myvo.cn/SMSWebService/Service.asmx</Value>
+    </Setting>
+    <Setting Name="Eyousoft_yhq_Web_net_2office_sms_SmsService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sms.2office.net:8080/WebService/SmsService.asmx</Value>
+    </Setting>
+    <Setting Name="Eyousoft_yhq_Web_net_2office_voicesms_VoiceVerificationService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://voicesms.2office.net:8080/WebService/VoiceVerificationService.asmx</Value>
+    </Setting>
+    <Setting Name="Eyousoft_yhq_Web_WebReference_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://124.42.75.134:8086/aois/ysta.asmx</Value>
+    </Setting>
+    <Setting Name="Eyousoft_yhq_Web_WebReference1_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://124.42.75.134:8087/aois/ysta.asmx</Value>
+    </Setting>
+    <Setting Name="Eyousoft_yhq_Web_com_8222666_fxb2b_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://fxad.8222666.com/aois/ysta.asmx</Value>
+    </Setting>
+    <Setting Name="Eyousoft_yhq_Web_com_8222666_fxs_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://fxb2b.8222666.com/aois/ysta.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
